@@ -1,26 +1,43 @@
-import React from 'react'
+import React from "react";
+import ReactPaginate from "react-paginate";
 
-const Pagination=({itemsPerPage,totalItems,pageFunc}) =>{
+const PaginationComponent = ({ pageCount, onPageChange }) => {
+  const handlePageClick = (data) => {
+    const selectedPage = data.selected;
+    onPageChange(selectedPage);
+  };
 
-    const pageNo=[]
+  return (
+    // <ReactPaginate
+    //   pageCount={pageCount}
+    //   onPageChange={handlePageClick}
+    //   containerClassName={"pagination"}
+    //   activeClassName={"active"}
+    // />
 
-    for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage);i++) {
-        pageNo.push(i)
-    }
-    return (
-        <div> 
-            {/* build pagination */}
-            <ul className="pagination d-flex justify-content-center m-2">
-                {pageNo.map(number=>(
-                    <li className="page-item" key={number}>
-                        <a href="#" onClick={()=>pageFunc(number)} className="page-link">
-                            {number}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
-}
+    <nav
+      aria-label="Page navigation"
+      className="d-flex justify-content-center mt-4"
+    >
+      <ul className="pagination">
+        <ReactPaginate
+          pageCount={pageCount}
+          onPageChange={handlePageClick}
+          previousLabel={"Previous"}
+          nextLabel={"Next"}
+          breakLabel={"..."}
+          containerClassName={"pagination"}
+          activeClassName={"active"}
+          pageClassName={"page-item"}
+          previousClassName={"page-item"}
+          nextClassName={"page-item"}
+          pageLinkClassName={"page-link"}
+          previousLinkClassName={"page-link"}
+          nextLinkClassName={"page-link"}
+        />
+      </ul>
+    </nav>
+  );
+};
 
-export default Pagination
+export default PaginationComponent;
