@@ -8,12 +8,6 @@ const PaginationComponent = ({ pageCount, onPageChange }) => {
   };
 
   return (
-    // <ReactPaginate
-    //   pageCount={pageCount}
-    //   onPageChange={handlePageClick}
-    //   containerClassName={"pagination"}
-    //   activeClassName={"active"}
-    // />
 
     <nav
       aria-label="Page navigation"
