@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import axios from "axios";
 
-import Header from "./component/Header/Header";
+import Header from "./component/Utilities/Header";
 import MainPage from "./component/Pages/MainPage";
 import UserPage from "./component/Pages/UserPage";
 import { Fragment } from "react";
