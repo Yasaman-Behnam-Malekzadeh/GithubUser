@@ -6,7 +6,7 @@ const MainPage = (props) => {
   return (
     <div className="w-full flex flex-row">
       <Sidebar />
-      <div className="w-4/5 flex flex-wrap p-3">
+      <div className="w-3/5 flex flex-wrap p-3">
         {props.items.map((item) => (
           <MainPageItems
             key={item.id}
