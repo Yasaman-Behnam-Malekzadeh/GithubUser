@@ -4,22 +4,32 @@ function Sidebar() {
   const filterItems = [
     {
       id: 1,
-      title: "code",
-      numbers: 230000,
+      title: "Code",
+      numbers: "23M",
     },
     {
       id: 2,
-      title: "users",
+      title: "Repositories",
       numbers: 23,
     },
     {
       id: 3,
-      title: "issues",
-      numbers: 370000,
+      title: "Issues",
+      numbers: "37M",
+    },
+    {
+      id: 4,
+      title: "Pull requests",
+      numbers: "37M",
+    },
+    {
+      id: 5,
+      title: "Users",
+      numbers: "37M",
     },
   ];
   return (
-    <div className="w-1/5 border-right p-3">
+    <div className="w-96 border-right p-3">
       <div className="text-md font-semibold mb-2">Filter by</div>
       <div>
         {filterItems.map((item) => (

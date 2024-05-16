@@ -1,14 +1,14 @@
 import Sidebar from "../Utilities/Sidebar";
 import MainPageItems from "./MainPageItems";
-import MainPageHeader from '../Utilities/MainPageHeader'
+import MainPageHeader from "../Utilities/MainPageHeader";
 // import Pagination from "../Pagination/Pagination";
 
 const MainPage = (props) => {
   return (
     <div className="w-full flex flex-row">
       <Sidebar />
-      <div className="w-3/5 flex flex-wrap p-3">
-        <MainPageHeader/>
+      <div className="w-full flex flex-wrap p-3">
+        <MainPageHeader />
         {props.items.map((item) => (
           <MainPageItems
             key={item.id}
