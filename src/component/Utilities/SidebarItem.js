@@ -3,6 +3,14 @@ import { RiGroupLine } from "react-icons/ri";
 import { GoIssueOpened } from "react-icons/go";
 import { GoRepo } from "react-icons/go";
 import { IoIosGitPullRequest } from "react-icons/io";
+import { GoCommentDiscussion } from "react-icons/go";
+import { GoGitCommit } from "react-icons/go";
+import { GoPackage } from "react-icons/go";
+import { FiBookOpen } from "react-icons/fi";
+import { PiSignpostLight } from "react-icons/pi";
+import { GoTelescope } from "react-icons/go";
+
+
 
 function SidebarItem({ title, numbers }) {
   const icon = (name) => {
@@ -22,6 +30,24 @@ function SidebarItem({ title, numbers }) {
         break;
       case "Pull requests":
         result = <IoIosGitPullRequest />;
+        break;
+      case "Discussions":
+        result = <GoCommentDiscussion />;
+        break;
+      case "Commits":
+        result = <GoGitCommit />;
+        break;
+      case "Packages":
+        result = <GoPackage />;
+        break;
+      case "Wikis":
+        result = <FiBookOpen />;
+        break;
+      case "Topics":
+        result = <PiSignpostLight />;
+        break;
+      case "Marketplace":
+        result = <GoTelescope />;
         break;
       default:
         result = "";

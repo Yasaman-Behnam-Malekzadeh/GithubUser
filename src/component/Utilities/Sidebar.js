@@ -24,7 +24,37 @@ function Sidebar() {
     },
     {
       id: 5,
+      title: "Discussions",
+      numbers: "37M",
+    },
+    {
+      id: 6,
       title: "Users",
+      numbers: "37M",
+    },
+    {
+      id: 7,
+      title: "Commits",
+      numbers: "37M",
+    },
+    {
+      id: 8,
+      title: "Packages",
+      numbers: "37M",
+    },
+    {
+      id: 9,
+      title: "Wikis",
+      numbers: "37M",
+    },
+    {
+      id: 10,
+      title: "Topics",
+      numbers: "37M",
+    },
+    {
+      id: 11,
+      title: "Marketplace",
       numbers: "37M",
     },
   ];
