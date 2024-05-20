@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { GoRepo } from "react-icons/go";
+import { RiGroupLine } from "react-icons/ri";
 
 const MainPageItems = (props) => {
   //for distructuring
@@ -32,9 +34,13 @@ const MainPageItems = (props) => {
         <div className="flex text-xs text-gray-400">
           <div className="mr-1">Boulder, CO</div>
           <span>.</span>
-          <div className="mr-1 ml-1">130</div>
+          <div className="mr-1 ml-1">
+            <GoRepo /> 130
+          </div>
           <span>.</span>
-          <div className="ml-1">21</div>
+          <div className="ml-1">
+            <RiGroupLine /> 21
+          </div>
         </div>
       </div>
     </div>
