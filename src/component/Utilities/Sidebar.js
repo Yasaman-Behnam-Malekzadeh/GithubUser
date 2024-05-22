@@ -59,7 +59,7 @@ function Sidebar() {
     },
   ];
   return (
-    <div className="w-96 border-right p-3">
+    <div className=" border-right p-3">
       <div className="text-md font-semibold mb-2">Filter by</div>
       <div>
         {filterItems.map((item) => (

@@ -33,13 +33,13 @@ const MainPageItems = (props) => {
         <div className="text-sm">Passionate about robotics and Crypto</div>
         <div className="flex text-xs text-gray-400">
           <div className="mr-1">Boulder, CO</div>
-          <span>.</span>
-          <div className="mr-1 ml-1">
-            <GoRepo /> 130
+          <span> . </span>
+          <div className="flex items-center mr-1 ml-1">
+            <GoRepo /> 130 
           </div>
-          <span>.</span>
-          <div className="ml-1">
-            <RiGroupLine /> 21
+          <span> . </span>
+          <div className="flex items-center ml-1">
+            <RiGroupLine /> 21 
           </div>
         </div>
       </div>
