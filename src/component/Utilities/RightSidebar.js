@@ -29,7 +29,10 @@ function RightSidebar() {
           </span>
         </a>
       </div>
-      <div className="w-full border rounded-md h-15 flex p-3 mb-3 items-center"></div>
+      <div className="w-full border rounded-md h-15 flex p-3 mb-3 items-center">
+        <h2 className="text-xs font-bold m-0">How can we improve search?</h2>
+        <span className="text-blue-600 text-xs pl-2">Give feedback</span>
+      </div>
     </div>
   );
 }
