@@ -4,12 +4,12 @@ function RightSidebar() {
   return (
     <div className="mt-14 pt-1 pe-5">
       <div className="w-full border rounded-md h-15 flex flex-col p-3 mb-3 items-center">
-        <div className="w-full">
+        <div className="w-full mb-2">
           <img
             src="https://github.com/images/modules/search/mona-love-2x.png"
             alt="logo-love"
-            height={"50px"}
-            width={"50px"}
+            height={"45px"}
+            width={"45px"}
           />
         </div>
         <h2 className="text-base">

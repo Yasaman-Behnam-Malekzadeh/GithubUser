@@ -1,5 +1,5 @@
 import Sidebar from "../Utilities/Sidebar";
-import MainPageItems from "./MainPageItems";
+// import MainPageItems from "./MainPageItems";
 import MainPageHeader from "../Utilities/MainPageHeader";
 import RightSidebar from "../Utilities/RightSidebar";
 // import Pagination from "../Pagination/Pagination";
@@ -12,14 +12,23 @@ const MainPage = (props) => {
       </div>
       <div className="w-9/12 lg:w-6/12 flex flex-wrap p-3">
         <MainPageHeader />
-        {props.items.map((item) => (
+        {/* {console.log(props.items)} */}
+        <div className="flex flex-col">
+          {/* {props.items.map((item) => (
+            <div>
+              <div>yasi</div>
+              <br />
+            </div>
+          ))} */}
+        </div>
+        {/* {props.items.map((item) => (
           <MainPageItems
             key={item.id}
             login={item.login}
             avatar_url={item.avatar_url}
             html_url={item.html_url}
           />
-        ))}
+        ))} */}
       </div>
       <div className="hidden lg:block lg:w-3/12">
         <RightSidebar />
